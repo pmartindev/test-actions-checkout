@@ -5,7 +5,7 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cimg/base:2023.01
+    container: cypress/browsers:node18.12.0-chrome107
     steps:
       - run: git --version
       - uses: actions/checkout@v3
