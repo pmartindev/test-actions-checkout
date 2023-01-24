@@ -10,7 +10,6 @@ jobs:
       - run: git --version
       - run: env
       - run: whoami
-      - run: docker --version
       - run: docker volume ls
       - run: ls -la
       - uses: actions/checkout@v3
