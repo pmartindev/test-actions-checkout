@@ -3,6 +3,12 @@ name: reproduction
 on: push
 
 jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -la
+      - run: pwd
   test:
     runs-on: ubuntu-latest
     container: cypress/browsers:node18.12.0-chrome107
@@ -10,6 +16,6 @@ jobs:
       - run: git --version
       - run: env
       - run: whoami
-      - run: docker volume ls
       - run: ls -la
-      - uses: actions/checkout@v3
+      - run: pwd
+     
