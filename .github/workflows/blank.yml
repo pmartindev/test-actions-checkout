@@ -2,6 +2,9 @@ name: reproduction
 
 on: push
 
+permissions:
+  issues: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
