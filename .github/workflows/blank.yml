@@ -3,16 +3,10 @@ name: reproduction
 on: push
 
 jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: ls -la
-      - run: pwd
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install curl
+      - run: sudo apt-get install curl
       - run: echo ${{ secrets.GITHUB_TOKEN }}
       - run: |
           curl --request POST \
