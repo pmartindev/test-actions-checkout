@@ -12,6 +12,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: apt-get install curl
       - run: echo ${{ secrets.GITHUB_TOKEN }}
       - run: |
           curl --request POST \
