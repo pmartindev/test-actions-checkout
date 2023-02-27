@@ -2,8 +2,8 @@ name: reproduction
 
 on: push
 
-# permissions:
-#   issues: write
+permissions:
+  issues: write
 
 jobs:
   test:
