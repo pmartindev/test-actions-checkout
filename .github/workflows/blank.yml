@@ -1,6 +1,6 @@
 name: reproduction
 
-on: workflow_dispatch
+on: push
 
 permissions:
   issues: write
