@@ -2,8 +2,8 @@ name: reproduction
 
 on: workflow_dispatch
 
-# permissions:
-#   issues: write
+permissions:
+  issues: write
 
 jobs:
   test:
