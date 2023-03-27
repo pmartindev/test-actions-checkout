@@ -1,9 +1,10 @@
 name: reproduction
 
-on: push
+on: workflow_dispatch
 
 permissions:
   issues: write
+
 
 jobs:
   test:
